@@ -1,0 +1,49 @@
+<script>
+var arg1 = parseInt(prompt('Введите аrg1'));
+var arg2 = parseInt(prompt('Введите arg2'));
+var operation = prompt('Введите одну из операций: сложение, вычитание, умножение, деление: ')
+    function summation (arg1, arg2) {
+        return arg1+arg2;
+    }
+    function difference (arg1, arg2) {
+        return arg1-arg2;
+    }
+    function multiplication (arg1, arg2) {
+        return arg1*arg2;
+    }
+    function private (arg1, arg2) {
+        return arg1/arg2;
+    }
+
+    sum = summation (arg1, arg2);
+    diff = difference (arg1, arg2);
+    mult = multiplication (arg1, arg2);
+    priv = private (arg1, arg2);
+
+function mathOperation (arg1, arg2, operation) {
+    switch (operation) {
+        case 'сложение':
+        summation (arg1, arg2);
+        console.log ('выбрана операция сложения');
+        console.log (sum);
+        break;
+        case 'вычитание':
+        difference (arg1, arg2);
+        console.log ('выбрана операция вычитания');
+        console.log (diff);
+        break;
+        case 'умножение':
+        multiplication (arg1, arg2);
+        console.log ('выбрана операция умножения');
+        console.log (mult);
+        break;
+        case 'деление':
+        private (arg1, arg2);
+        console.log ('выбрана операция деления');
+        console.log (priv);
+        break;
+    }
+}
+mOp = mathOperation (arg1, arg2, operation);
+
+</script>
